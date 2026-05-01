@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking Desk</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="manage">
+  <!-- Shared dashboard shell -->
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">S</span>
+        <span>StaySync</span>
+      </a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="index.html">StaySync Home</a>
+        <a href="rooms.html">Available Stays</a>
+        <a href="booking.html">Reserve a Room</a>
+        <a class="active" href="manage.html">Booking Desk</a>
+        <a href="admin.html">Staff Console</a>
+      </nav>
+    </aside>
+
+    <main class="main-area">
+      <!-- Page heading -->
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">Guest reservation hub</p>
+          <h1>Booking Desk</h1>
+        </div>
+        <a class="primary-action" href="booking.html">Add Reservation</a>
+      </header>
+
+      <!-- Saved bookings for guests -->
+      <section class="section-heading">
+        <h2>Your synced stays</h2>
+        <p>Reservations saved from this browser are shown below without private staff-only details.</p>
+      </section>
+      <section class="booking-list" id="guestReservationList"></section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

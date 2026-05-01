@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Available Stays</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="rooms">
+  <!-- Shared dashboard shell -->
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">S</span>
+        <span>StaySync</span>
+      </a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="index.html">StaySync Home</a>
+        <a class="active" href="rooms.html">Available Stays</a>
+        <a href="booking.html">Reserve a Room</a>
+        <a href="manage.html">Booking Desk</a>
+        <a href="admin.html">Staff Console</a>
+      </nav>
+    </aside>
+
+    <main class="main-area">
+      <!-- Page heading -->
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">Inventory</p>
+          <h1>Available Stays</h1>
+        </div>
+        <a class="primary-action" href="booking.html">Reserve a Room</a>
+      </header>
+
+      <!-- Room cards are inserted by JavaScript -->
+      <section class="section-heading">
+        <h2>Choose a stay profile</h2>
+        <p>Each card includes a room type, nightly price, status, and booking action.</p>
+      </section>
+      <section class="room-grid" id="roomList"></section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

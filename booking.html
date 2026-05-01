@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reserve a Room</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="booking">
+  <!-- Shared dashboard shell -->
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">S</span>
+        <span>StaySync</span>
+      </a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="index.html">StaySync Home</a>
+        <a href="rooms.html">Available Stays</a>
+        <a class="active" href="booking.html">Reserve a Room</a>
+        <a href="manage.html">Booking Desk</a>
+        <a href="admin.html">Staff Console</a>
+      </nav>
+    </aside>
+
+    <main class="main-area">
+      <!-- Page heading -->
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">Reservation workflow</p>
+          <h1>Reserve a Room</h1>
+        </div>
+        <a class="ghost-action" href="rooms.html">Review Stays</a>
+      </header>
+
+      <!-- Booking form and workflow summary -->
+      <section class="booking-layout">
+        <form class="booking-form" id="bookingForm">
+          <h2>Create guest reservation</h2>
+          <p class="form-note">Saved reservations appear on the Booking Desk. Staff details are checked from the Staff Console.</p>
+
+          <label for="guestName">Guest name</label>
+          <input id="guestName" name="guestName" type="text" placeholder="George Omolu" required>
+
+          <label for="guestEmail">Guest email</label>
+          <input id="guestEmail" name="guestEmail" type="email" placeholder="georgeomolu@example.com" required>
+
+          <label for="roomChoice">Room type</label>
+          <select id="roomChoice" name="roomChoice" required></select>
+
+          <div class="form-row">
+            <div>
+              <label for="checkInDate">Check-in</label>
+              <input id="checkInDate" name="checkInDate" type="date" required>
+            </div>
+            <div>
+              <label for="checkOutDate">Check-out</label>
+              <input id="checkOutDate" name="checkOutDate" type="date" required>
+            </div>
+          </div>
+
+          <label for="guestCount">Guest count</label>
+          <input id="guestCount" name="guestCount" type="number" min="1" max="6" value="1" required>
+
+          <button class="primary-action full-width" type="submit">Sync Reservation</button>
+          <p class="success-message" id="bookingMessage" aria-live="polite"></p>
+        </form>
+
+        <aside class="workflow-card">
+          <p class="eyebrow">Booking steps</p>
+          <h2>Desk flow</h2>
+          <ol class="workflow-list">
+            <li>Select a room from the availability list.</li>
+            <li>Add the guest and arrival details.</li>
+            <li>Save the booking record.</li>
+            <li>Review the booking from the guest and staff pages.</li>
+          </ol>
+        </aside>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

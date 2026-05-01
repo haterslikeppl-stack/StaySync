@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StaySync Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="home">
+  <!-- Shared dashboard shell -->
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">S</span>
+        <span>StaySync</span>
+      </a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a class="active" href="index.html">StaySync Home</a>
+        <a href="rooms.html">Available Stays</a>
+        <a href="booking.html">Reserve a Room</a>
+        <a href="manage.html">Booking Desk</a>
+        <a href="admin.html">Staff Console</a>
+      </nav>
+    </aside>
+
+    <main class="main-area">
+      <!-- Top bar for account and system context -->
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">Hotel booking system</p>
+          <h1>StaySync Home</h1>
+        </div>
+        <a class="primary-action" href="booking.html">Start Reservation</a>
+      </header>
+
+      <!-- Home dashboard overview -->
+      <section class="hero-grid">
+        <div class="hero-panel">
+          <p class="eyebrow">Guest operations</p>
+          <h2>Reservations, rooms, and front desk support in one polished workspace.</h2>
+          <p>StaySync gives guests and staff a focused way to browse stays, reserve rooms, and review booking records without the usual hotel look.</p>
+          <div class="hero-actions">
+            <a class="primary-action" href="rooms.html">Available Rooms</a>
+            <a class="ghost-action" href="manage.html">Open Booking Desk</a>
+          </div>
+        </div>
+
+        <div class="status-board" aria-label="Reservation summary">
+          <div class="metric-card">
+            <span class="metric-number" id="homeBookingCount">0</span>
+            <span class="metric-label">Active Reservations</span>
+          </div>
+          <div class="metric-card">
+            <span class="metric-number">4</span>
+            <span class="metric-label">Room Types</span>
+          </div>
+          <div class="metric-card">
+            <span class="metric-number">£96</span>
+            <span class="metric-label">Lowest Price</span>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

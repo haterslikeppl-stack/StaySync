@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Staff Console</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="admin">
+  <!-- Shared dashboard shell -->
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">S</span>
+        <span>StaySync</span>
+      </a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="index.html">StaySync Home</a>
+        <a href="rooms.html">Available Stays</a>
+        <a href="booking.html">Reserve a Room</a>
+        <a href="manage.html">Booking Desk</a>
+        <a class="active" href="admin.html">Staff Console</a>
+      </nav>
+    </aside>
+
+    <main class="main-area">
+      <!-- Page heading -->
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">Staff area</p>
+          <h1>Staff Console</h1>
+        </div>
+        <a class="ghost-action" href="manage.html">Guest Desk</a>
+      </header>
+
+      <!-- Simple staff login for the demo console -->
+      <section class="staff-login-card" id="staffLoginCard">
+        <h2>Staff sign in</h2>
+        <p>Enter the demo staff code to view private booking records.</p>
+        <p style="font-size: 13px; color: gray;">For this demo, use the example staff code shown in the box.</p>
+        <form id="staffLoginForm">
+          <label for="staffCode">Staff code</label>
+          <input id="staffCode" type="password" placeholder="staff123" required>
+          <button class="primary-action full-width" type="submit">Open Staff Console</button>
+          <p class="success-message" id="staffLoginMessage" aria-live="polite"></p>
+        </form>
+      </section>
+
+      <!-- Staff records table -->
+      <section class="console-card hidden" id="staffRecordsCard">
+        <div class="console-header">
+          <h2>All booking records</h2>
+          <span class="record-count" id="adminRecordCount">0 records</span>
+        </div>
+        <table class="admin-table">
+          <thead>
+            <tr>
+              <th>Guest</th>
+              <th>Room</th>
+              <th>Dates</th>
+              <th>Guests</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="adminRecordTable">
+            <tr>
+              <td colspan="5">Loading records...</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
