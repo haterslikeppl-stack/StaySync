@@ -1,4 +1,4 @@
-# StaySync Hotel Booking System
+# StaySync Hotel Booking System 
 
 Hi, my name is George and this is my StaySync hotel booking website. I built it as a prototype system for managing hotel room reservations.
 
