@@ -1,3 +1,4 @@
+<!-- StaySync Home Page - Main landing page for the hotel booking system -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,13 +8,16 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body data-page="home">
-  <!-- Shared dashboard shell -->
+  <!-- Main application container with sidebar navigation -->
   <div class="app-shell">
+    <!-- Sidebar navigation - appears on all pages -->
     <aside class="sidebar">
+      <!-- Brand logo and name -->
       <a class="brand" href="index.html">
         <span class="brand-mark">S</span>
         <span>StaySync</span>
       </a>
+      <!-- Main navigation menu -->
       <nav class="nav-links" aria-label="Main navigation">
         <a class="active" href="index.html">StaySync Home</a>
         <a href="rooms.html">Available Stays</a>
@@ -24,7 +28,7 @@
     </aside>
 
     <main class="main-area">
-      <!-- Top bar for account and system context -->
+      <!-- Page header with title and call-to-action -->
       <header class="topbar">
         <div>
           <p class="eyebrow">Hotel booking system</p>
@@ -33,8 +37,9 @@
         <a class="primary-action" href="booking.html">Start Reservation</a>
       </header>
 
-      <!-- Home dashboard overview -->
+      <!-- Main content area with hero section and status board -->
       <section class="hero-grid">
+        <!-- Hero panel with system description and navigation -->
         <div class="hero-panel">
           <p class="eyebrow">Guest operations</p>
           <h2>Reservations, rooms, and front desk support in one polished workspace.</h2>
@@ -45,11 +50,13 @@
           </div>
         </div>
 
+        <!-- Status board showing current booking metrics -->
         <div class="status-board" aria-label="Reservation summary">
           <div class="metric-card">
             <span class="metric-number" id="homeBookingCount">0</span>
             <span class="metric-label">Active Reservations</span>
           </div>
+          <!-- Static metrics showing system capabilities -->
           <div class="metric-card">
             <span class="metric-number">4</span>
             <span class="metric-label">Room Types</span>
@@ -63,6 +70,7 @@
     </main>
   </div>
 
+  <!-- Load the main JavaScript functionality -->
   <script src="script.js"></script>
 </body>
 </html>
