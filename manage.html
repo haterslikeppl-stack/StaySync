@@ -1,4 +1,4 @@
-<!-- Booking Desk Page - Shows guest reservations and allows management -->
+<!-- Booking Desk -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,16 +8,15 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body data-page="manage">
-  <!-- Main application container with sidebar navigation -->
+  <!-- Layout -->
   <div class="app-shell">
-    <!-- Sidebar navigation - appears on all pages -->
+    <!-- Sidebar -->
     <aside class="sidebar">
-      <!-- Brand logo and name -->
       <a class="brand" href="index.html">
         <span class="brand-mark">S</span>
         <span>StaySync</span>
       </a>
-      <!-- Main navigation menu -->
+
       <nav class="nav-links" aria-label="Main navigation">
         <a href="index.html">StaySync Home</a>
         <a href="rooms.html">Available Stays</a>
@@ -28,7 +27,7 @@
     </aside>
 
     <main class="main-area">
-      <!-- Page header with title and call-to-action -->
+      <!-- Header -->
       <header class="topbar">
         <div>
           <p class="eyebrow">Guest reservation hub</p>
@@ -37,17 +36,17 @@
         <a class="primary-action" href="booking.html">Add Reservation</a>
       </header>
 
-      <!-- Guest booking management section -->
+      <!-- Guest bookings -->
       <section class="section-heading">
         <h2>Your synced stays</h2>
         <p>Reservations saved from this browser are shown below without private staff-only details.</p>
       </section>
-      <!-- Container where guest bookings are dynamically displayed by JavaScript -->
+
       <section class="booking-list" id="guestReservationList"></section>
     </main>
   </div>
 
-  <!-- Load the main JavaScript functionality -->
+  <!-- JavaScript -->
   <script src="script.js"></script>
 </body>
 </html>

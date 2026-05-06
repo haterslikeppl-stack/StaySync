@@ -1,4 +1,4 @@
-<!-- Staff Console Page - Admin area for managing all bookings -->
+<!-- Staff Console -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,16 +8,14 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body data-page="admin">
-  <!-- Main application container with sidebar navigation -->
   <div class="app-shell">
-    <!-- Sidebar navigation - appears on all pages -->
+    <!-- Sidebar -->
     <aside class="sidebar">
-      <!-- Brand logo and name -->
       <a class="brand" href="index.html">
         <span class="brand-mark">S</span>
         <span>StaySync</span>
       </a>
-      <!-- Main navigation menu -->
+
       <nav class="nav-links" aria-label="Main navigation">
         <a href="index.html">StaySync Home</a>
         <a href="rooms.html">Available Stays</a>
@@ -28,7 +26,7 @@
     </aside>
 
     <main class="main-area">
-      <!-- Page header with title and navigation -->
+      <!-- Header -->
       <header class="topbar">
         <div>
           <p class="eyebrow">Staff area</p>
@@ -37,7 +35,7 @@
         <a class="ghost-action" href="manage.html">Guest Desk</a>
       </header>
 
-      <!-- Staff login section - requires authentication -->
+      <!-- Staff sign in -->
       <section class="staff-login-card" id="staffLoginCard">
         <h2>Staff sign in</h2>
         <p>Enter the demo staff code to view private booking records.</p>
@@ -50,14 +48,13 @@
         </form>
       </section>
 
-      <!-- Staff records management - hidden until login -->
+      <!-- Booking records -->
       <section class="console-card hidden" id="staffRecordsCard">
         <div class="console-header">
           <h2>All booking records</h2>
-          <!-- Dynamic count of total records -->
           <span class="record-count" id="adminRecordCount">0 records</span>
         </div>
-        <!-- Table displaying all bookings with edit/remove actions -->
+
         <table class="admin-table">
           <thead>
             <tr>
@@ -68,7 +65,7 @@
               <th>Actions</th>
             </tr>
           </thead>
-          <!-- Table body populated by JavaScript -->
+
           <tbody id="adminRecordTable">
             <tr>
               <td colspan="5">Loading records...</td>
@@ -79,7 +76,7 @@
     </main>
   </div>
 
-  <!-- Load the main JavaScript functionality -->
+  <!-- JavaScript -->
   <script src="script.js"></script>
 </body>
 </html>

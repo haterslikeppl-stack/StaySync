@@ -1,4 +1,4 @@
-<!-- Available Stays Page - Shows all room types and their availability -->
+<!-- Available Stays -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,16 +8,15 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body data-page="rooms">
-  <!-- Main application container with sidebar navigation -->
+  <!-- Layout -->
   <div class="app-shell">
-    <!-- Sidebar navigation - appears on all pages -->
+    <!-- Sidebar -->
     <aside class="sidebar">
-      <!-- Brand logo and name -->
       <a class="brand" href="index.html">
         <span class="brand-mark">S</span>
         <span>StaySync</span>
       </a>
-      <!-- Main navigation menu -->
+
       <nav class="nav-links" aria-label="Main navigation">
         <a href="index.html">StaySync Home</a>
         <a class="active" href="rooms.html">Available Stays</a>
@@ -28,7 +27,7 @@
     </aside>
 
     <main class="main-area">
-      <!-- Page header with title and call-to-action -->
+      <!-- Header -->
       <header class="topbar">
         <div>
           <p class="eyebrow">Inventory</p>
@@ -37,17 +36,17 @@
         <a class="primary-action" href="booking.html">Reserve a Room</a>
       </header>
 
-      <!-- Room listing sections -->
+      <!-- Room list -->
       <section class="section-heading">
         <h2>Choose a stay profile</h2>
         <p>Each card includes a room type, nightly price, status, and booking action.</p>
       </section>
-      <!-- Container where room cards are dynamically inserted by JavaScript -->
+
       <section class="room-grid" id="roomList"></section>
     </main>
   </div>
 
-  <!-- Load the main JavaScript functionality -->
+  <!-- JavaScript -->
   <script src="script.js"></script>
 </body>
 </html>
